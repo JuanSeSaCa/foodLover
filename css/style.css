@@ -1,0 +1,429 @@
+@import url("variables.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto Slab", serif;
+
+}
+
+body {
+    background-color: #17171e;
+}
+
+#waffle {
+    width: 100%;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../storage/img/placeYourImageHere0.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.navHome {
+    display: flex;
+    flex-flow: row;
+    min-height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    padding: 10px;
+
+}
+
+/* .sectionHome {
+    height: calc(100vh - 116px);
+} */
+.listHome,
+.listHome2 {
+
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: 500;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2.5rem;
+
+
+
+}
+
+nav {
+    display: flex;
+    align-content: space-around;
+}
+
+.navHome a {
+    display: flex;
+    flex-flow: row wrap;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    justify-content: space-around;
+    word-spacing: normal 10px;
+    font-weight: 700;
+}
+
+.navHome a:hover {
+    color: #e58f00;
+}
+
+.navHome img {
+    padding-top: 1rem;
+}
+
+.container1 {
+    display: flex;
+    height: 100%;
+    flex-flow: row;
+    align-content: space-around;
+    gap: 50px;
+    align-items: center;
+
+}
+
+.imagenPpal,
+.textPpal {
+    width: 100%;
+    flex: 1;
+}
+
+.textPpal {
+    margin: 20px;
+
+}
+
+
+.textPpal h1 {
+    color: #e58f00;
+    font-size: 5rem;
+
+}
+
+.textPpal p {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 2rem 3rem 2rem 0;
+}
+
+.homeButton {
+    color: #17171e;
+    background: #e58f00;
+    border-radius: 4px;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    font-weight: 600;
+}
+
+.About {
+    display: flex;
+    height: 100vh;
+    background: #17171e;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+.about__img {
+    display: flex;
+    flex: 1;
+    height: 60%;
+    /* padding-left: 200px; */
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.about__img img {
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about__text p {
+    color: #fff;
+    flex: 1;
+    font-size: 1.8rem;
+}
+
+.about__text {
+    color: #fff;
+    flex: 1;
+    font-size: 2.5rem;
+}
+
+.Quality {
+
+    background: #17171e;
+    position: relative;
+    padding-top: 2rem;
+}
+
+.Quality__img_background img {
+    width: 100%;
+}
+
+.Quality__container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.Quality__img0 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 42vh;
+
+}
+
+.Quality__img1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 95vh;
+}
+
+.Quality__img3 {
+    position: absolute;
+    bottom: 0;
+    width: 60vh;
+}
+
+.Quality__img0 img,
+.Quality__img1 img,
+.Quality__img3 img {
+    width: 100%;
+}
+
+.Quality__text {
+    position: absolute;
+    max-width: 500px;
+    left: 12rem;
+    top: 20%;
+}
+
+.Quality__text p {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 1rem 3rem 0 0;
+
+}
+
+.Quality__text h2 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.Gallery {
+    background: #17171e;
+}
+
+.Gallery__container {
+    align-items: center;
+    max-width: 1500px;
+}
+
+.Gallery h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.Gallery__imgs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* width: 100%; */
+    padding: 4rem;
+    place-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.Gallery__imgs img {
+    object-fit: cover;
+    object-position: center;
+    width: 80%;
+}
+
+.Our {
+    display: flex;
+    height: 100vh;
+    background: url(/storage/img/placeYourImageHereOur0.png) center/cover no-repeat;
+    padding-block: 1rem;
+}
+
+.Our__text {
+    max-width: 500px;
+    text-align: center;
+    position: center;
+    border: 7px solid #e58f00;
+    background-color: #17171e6e;
+    padding: 2rem;
+}
+
+.Our p {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.Our h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 2rem 3rem 2rem 2;
+}
+
+.Our {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.menu {
+
+    height: 100vh;
+    background: #17171e;
+    padding: 0 3rem 0 3rem;
+
+}
+
+.menu__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.tittle__menu {
+    width: 100vw;
+}
+
+.columna__Menu {
+    flex: 1;
+    align-content: start;
+}
+
+.tittle__menu {
+    padding: 5rem 0 0 0;
+    color: #fff;
+    font-size: 2.1rem;
+
+}
+
+.menu__container img {
+    width: 100%;
+}
+
+
+.text__Menu h4 {
+    color: #e58f00;
+    font-size: 1.2rem;
+    padding: 1.5rem 0 1rem 0;
+    text-align: start;
+
+}
+
+.text__Menu h3 {
+    color: #e58f00;
+    font-size: 1.7rem;
+    padding: 2rem 0rem 1rem 0rem;
+    text-align: start;
+}
+
+.text__Menu p {
+    color: #fff;
+    font-size: 1rem;
+    text-align: start;
+}
+
+.contenedor_padre {
+    background-color: #e58f00;
+    height: 50vh;
+    position: relative;
+    margin-top: 10rem;
+
+}
+
+
+.container__enjoy {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+.text__footer {
+    max-width: 500px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: #fff;
+    padding-right: 7rem;
+}
+
+.text__footer h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.text__footer p {
+    font-size: 1.5rem;
+}
+
+.Imagen_final {
+    position: absolute;
+    top: -90px;
+    left: 0;
+}
+
+.Imagen_final img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: #38383e;
+    align-items: center;
+    padding: 10rem 0 0 0;
+}
+
+footer ul {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0 0 0;
+    list-style: none;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.Logos__redes {
+    color: #fff;
+    padding: 2rem 0 4rem 0;
+
+
+}
